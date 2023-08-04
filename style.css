@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+nav a.navbar-brand {
+  font-size: 2rem;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: #25d366;
+  border-radius: 5px;
+  box-shadow: 0 0px 8px 2px rgba(0, 100, 0, 0.3);
+  padding: 0.6em 1em;
+  transition: all 300ms;
+}
+
+.dropdown-menu {
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  animation: fade-in 300ms ease-out forwards;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(-180deg);
+}
+.dropdown-toggle::after {
+  transition: all 500ms;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+}
+
+footer ul li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+footer h3::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #6c757d;
+}
+
+/* Common Styles */
+
+:root {
+  --primary-color: #565add;
+  --secondary-color: #2b1c50;
+  --orange-color: #ff641a;
+  --extra-light-purple-color: #ececfb;
+  --light-purple-color: #d1d1f7;
+}
+
+body {
+  color: #212529;
+  font-family: "Poppins", system-ui, -apple-system;
+}
+
+.button {
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 300ms ease-in;
+  box-shadow: 0 4px 6px #367fd333, 0 2px 16px #367fd32e;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.secondary-button {
+  background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+}
+
+.heading {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.swiper-button {
+  display: grid;
+  place-content: center;
+  background-color: var(--light-purple-color);
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+}
+
+.swiper-button:nth-child(2) {
+  left: unset;
+  right: 0;
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--light-purple-color);
+}
+
+/* Section 1 Starts */
+.sec-1 {
+  background-color: var(--light-purple-color);
+  padding-block: 5em;
+}
+
+.sec-1-left p {
+  font-size: 1.2rem;
+}
+
+.sec-1-left button {
+  display: flex;
+  place-content: center;
+  gap: 0.6em;
+  padding: 0.8em 4em;
+}
+
+.sec-1-left img {
+  max-width: 1.5rem;
+}
+
+.sec-1-right .card-placeholder {
+  border-radius: 30px;
+  background-color: #9f92ec;
+  transform: rotate(-12deg);
+}
+
+.sec-1-right .card {
+  border-radius: 1rem;
+  transform: rotate(12deg);
+}
+
+.sec-1-right h2 {
+  color: var(--secondary-color);
+}
+
+.sec-1-right input,
+.sec-1-right textarea {
+  background-color: var(--extra-light-purple-color);
+}
+
+/* Section 2 Starts */
+
+.sec-2 {
+  background-color: var(--extra-light-purple-color);
+}
+
+
+.sec-2 img {
+  max-width: 3rem;
+}
+
+/* Section 3 Starts */
+
+.sec-3 {
+  padding-block: 5em;
+}
+
+
+.sec-3 .img-container img {
+  max-width: 3rem;
+}
+
+.sec-3 .stars-container img {
+  max-width: 1rem;
+}
+
+/* Second Row Below */
+
+
+.sec-3 .paragraphs .img-container {
+  height: fit-content;
+  padding: 1.2em;
+  background-color: var(--extra-light-purple-color);
+  border-radius: 50%;
+}
+
+.sec-3 .paragraphs img {
+  max-width: 3rem;
+}
+
+.sec-3 .paragraph-text p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.1em;
+}
+
+.sec-3 .col-12 button {
+  padding: 0.8em 2.5em;
+}
+
+/* Section 4 Starts */
+
+.sec-4 {
+  background-color: var(--light-purple-color);
+}
+
+.sec-4 .container > .row {
+  padding-inline: 3em;
+  padding-bottom: 8em;
+  background-image: url("./img/sec4-img1.webp");
+  background-position: bottom right;
+  background-size: 25rem;
+  background-repeat: no-repeat;
+}
+
+.sec-4 .accordion-item {
+  background-color: var(--extra-light-purple-color);
+  border-radius: 1.5rem;
+}
+
+.sec-4 .accordion h2.accordion-header {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.sec-4 .accordion h2.accordion-header img {
+  max-width: 2.5rem;
+}
+
+.sec-4 .accordion h2.accordion-header button {
+  display: flex;
+  gap: 1em;
+  background-color: var(--extra-light-purple-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  padding-block: 1.5em;
+  border-radius: 1.5rem;
+}
+
+.sec-4 .accordion h2.accordion-header button.collapsed {
+  border-radius: 1.5rem;
+}
+
+/* Section 5 Starts */
+
+.sec-5 .content {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: center;
+}
+
+.sec-5 .content .img-container {
+  display: grid;
+  place-content: center;
+}
+
+.sec-5 .content img {
+  max-height: 13rem;
+}
+
+.sec-5 .content-right span {
+  font-weight: 600;
+}
+
+.sec-5 .content-right button {
+  padding: 0.8em 2.5em;
+}
+
+.sec-5 ul {
+  width: fit-content;
+  margin-inline: auto;
+  position: relative;
+  border: none;
+  gap: 4em;
+  margin-top: 1em;
+}
+
+.sec-5 .line-cross {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--light-purple-color);
+  width: calc(100% - 2rem);
+  height: 5px;
+  z-index: -1;
+}
+
+.sec-5 ul .nav-link {
+  padding: 1em;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: rgb(109, 100, 147);
+  max-height: 0.6rem;
+  max-width: 0.6rem;
+  font-size: 0.8rem;
+  isolation: auto;
+}
+
+.sec-5 ul .nav-link.active {
+  isolation: auto;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.sec-5 ul li {
+  padding: 0.3em;
+  background-color: var(--light-purple-color);
+  border-radius: 50%;
+}
+
+/* Section 6 Starts */
+
+.sec-6 {
+  background-color: rgba(43, 28, 80, 0.8);
+  background-image: url("./img/sec6-img1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding-block: 5em;
+}
+
+.sec-6 .swiper1 {
+  max-width: 90%;
+}
+
+.sec-6 .swiper1 .card {
+  font-size: 1.1rem;
+}
+
+.sec-6 .card .pdf {
+  max-width: 3rem;
+}
+
+.sec-6 .card .research-project {
+  border-bottom: 2px solid var(--light-purple-color);
+  padding-block: 1em;
+}
+
+.sec-6 .secondary-button {
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 2em;
+  gap: 0.3em;
+}
+
+.sec-6 .secondary-button img {
+  max-width: 1.5rem;
+}
+
+.sec-6 .rating-container {
+  margin: auto;
+  gap: 0.4em;
+}
+
+.sec-6 .stars-container {
+  align-items: center;
+}
+
+.sec-6 .stars-container img {
+  max-width: 1.1rem;
+}
+
+/* Section 7 Starts */
+
+.sec-7 .card-placeholder {
+  border-radius: 1rem;
+  transform: rotate(-8deg);
+  background-color: var(--light-purple-color);
+}
+
+.sec-7 .swiper2 {
+  max-width: 95%;
+}
+
+.sec-7 .swiper-button {
+  color: white;
+}
+
+.sec-7 .swiper2 .swiper-slide {
+  padding-inline: 3em;
+}
+
+.sec-7 .card {
+  border-radius: 0.51rem;
+  transform: rotate(8deg);
+}
+
+.sec-7 .reviewer-container {
+  padding-bottom: 1em;
+}
+.sec-7 .stars-container img {
+  max-width: 1.1rem;
+}
+
+.sec-7 .review-title {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.sec-7 .card-bottom img {
+  max-width: 1.8rem;
+}
+
+.sec-7 .secondary-button {
+  padding: 0.8em 2.5em;
+}
+
+/* Section 8 Starts */
+
+.sec-8 .accordion h2 button.collapsed {
+  background-color: white;
+}
+
+.sec-8 .accordion h2 button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.5em;
+  background-color: var(--extra-light-purple-color);
+  color: black;
+}
+
+.sec-8 .accordion-collapse {
+  background-color: var(--extra-light-purple-color);
+}
+
+/* Hover+ Effects And Animation */
+
+.btn-whatsapp:hover {
+  scale: 1.05;
+}
+
+footer ul li a:hover {
+  color: #f8f9fa;
+}
+
+.primary-button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.secondary-button:hover {
+  background-color: #fff;
+  color: var(--orange-color);
+}
+
+.form-control:focus {
+  border-color: var(--extra-light-purple-color);
+  box-shadow: 0px 0px 0px 0.25rem var(--extra-light-purple-color);
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-100%);
+  }
+  40% {
+    z-index: -1;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .sec-4 .container > .row {
+    padding-inline: 0;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .sec-4 .container > .row {
+    background-image: none;
+    padding-bottom: 3em;
+  }
+
+  .sec-5 content {
+    gap: 1em;
+  }
+
+  .sec-5 .content img {
+    max-height: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .sec-1-right .card-placeholder {
+    transform: rotate(0deg);
+  }
+
+  .sec-1-right .card {
+    transform: rotate(0deg);
+  }
+
+  .sec-3 {
+    padding-block: 3em;
+  }
+
+  .sec-5 .content img {
+    max-height: 13rem;
+    max-width: 100%;
+  }
+
+  .sec-5 .content {
+    gap: 1em;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .sec-6 .swiper1 {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .sec-3 .paragraphs .img-container {
+    width: fit-content;
+  }
+
+  .sec-5 ul {
+    gap: 2em;
+  }
+}
